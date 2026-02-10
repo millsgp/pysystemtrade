@@ -1,4 +1,4 @@
-# pysystemtrade
+# pysystemtrade1
 
 Systematic futures trading in python, using the systems developed by [Rob Carver](https://github.com/robcarver17/)
 
