@@ -194,7 +194,7 @@ if __name__ == "__main__":
     csv_multiple_data_path = arg_not_supplied
 
     # only change if you have written the files elsewhere
-    csv_roll_data_path = "/home/xiachenjun/mills_data"
+    csv_roll_data_path = "/home/xiachenjun/mills_data/roll_csv"
 
     # modify flags as required
     process_multiple_prices_all_instruments(
