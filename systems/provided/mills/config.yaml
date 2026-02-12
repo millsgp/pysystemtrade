@@ -5,7 +5,6 @@ use_forecast_div_mult_estimates: False
 use_instrument_weight_estimates: False
 use_instrument_div_mult_estimates: False
 use_forecast_scale_estimates: False
-
 #
 #
 #
@@ -388,7 +387,7 @@ forecast_scalars:
 #
 # Capital correction
 #
-percentage_vol_target: 25.0
+percentage_vol_target: 30.0
 notional_trading_capital: 5000
 base_currency: "USD"
 #
