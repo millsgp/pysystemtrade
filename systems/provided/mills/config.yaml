@@ -3,8 +3,9 @@
 use_forecast_weight_estimates: False
 use_forecast_div_mult_estimates: False
 use_instrument_weight_estimates: False
-use_instrument_div_mult_estimates: True
+use_instrument_div_mult_estimates: False
 use_forecast_scale_estimates: False
+
 #
 #
 #
@@ -388,19 +389,20 @@ forecast_scalars:
 # Capital correction
 #
 percentage_vol_target: 25.0
-notional_trading_capital: 500000
+notional_trading_capital: 5000
 base_currency: "USD"
 #
 # Portfolio creation
 #
-instrument_div_multiplier: 2.75
+instrument_div_multiplier: 1.27
 risk_overlay:
   max_risk_fraction_normal_risk: 1.75
   max_risk_fraction_stdev_risk: 4.0
   max_risk_limit_sum_abs_risk: 4.0
   max_risk_leverage: 20.0
 instrument_weights:
-  KR3: 1
+  KR3: 0.5
+  V2X: 0.5
 forecast_weights:
   KR3:
     accel16: 0.0
@@ -443,5 +445,47 @@ forecast_weights:
     skewabs365: 0.032
     skewrv180: 0.032
     skewrv365: 0.032
+  V2X:
+    accel16: 0.0
+    accel32: 0.0
+    accel64: 0.0
+    assettrend16: 0.034
+    assettrend2: 0.0
+    assettrend32: 0.034
+    assettrend4: 0.0
+    assettrend64: 0.034
+    assettrend8: 0.0
+    breakout10: 0.0
+    breakout160: 0.085
+    breakout20: 0.0
+    breakout320: 0.085
+    breakout40: 0.0
+    breakout80: 0.0
+    carry10: 0.042
+    carry125: 0.051
+    carry30: 0.042
+    carry60: 0.051
+    momentum16: 0.0
+    momentum32: 0.051
+    momentum4: 0.0
+    momentum64: 0.051
+    momentum8: 0.0
+    mrinasset1000: 0.085
+    normmom16: 0.034
+    normmom2: 0.0
+    normmom32: 0.034
+    normmom4: 0.0
+    normmom64: 0.034
+    normmom8: 0.0
+    relcarry: 0.085
+    relmomentum10: 0.0
+    relmomentum20: 0.0
+    relmomentum40: 0.0
+    relmomentum80: 0.0
+    skewabs180: 0.042
+    skewabs365: 0.042
+    skewrv180: 0.042
+    skewrv365: 0.042
 forecast_div_multiplier:
   KR3: 1.8846647325247878
+  V2X: 1.6226404672702985
