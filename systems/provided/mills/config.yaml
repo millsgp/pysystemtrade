@@ -388,20 +388,21 @@ forecast_scalars:
 # Capital correction
 #
 percentage_vol_target: 30.0
-notional_trading_capital: 5000
+notional_trading_capital: 10000
 base_currency: "USD"
 #
 # Portfolio creation
 #
-instrument_div_multiplier: 1.27
+instrument_div_multiplier: 1.4
 risk_overlay:
   max_risk_fraction_normal_risk: 1.75
   max_risk_fraction_stdev_risk: 4.0
   max_risk_limit_sum_abs_risk: 4.0
   max_risk_leverage: 20.0
 instrument_weights:
-  KR3: 0.5
-  V2X: 0.5
+  KR3: 0.33
+  V2X: 0.33
+  EUR_micro: 0.33
 forecast_weights:
   KR3:
     accel16: 0.0
@@ -485,6 +486,49 @@ forecast_weights:
     skewabs365: 0.042
     skewrv180: 0.042
     skewrv365: 0.042
+  EUR_micro:
+    accel16: 0.032
+    accel32: 0.032
+    accel64: 0.032
+    assettrend16: 0.021
+    assettrend2: 0.0
+    assettrend32: 0.021
+    assettrend4: 0.011
+    assettrend64: 0.021
+    assettrend8: 0.021
+    breakout10: 0.0
+    breakout160: 0.053
+    breakout20: 0.0
+    breakout320: 0.053
+    breakout40: 0.042
+    breakout80: 0.042
+    carry10: 0.026
+    carry125: 0.032
+    carry30: 0.026
+    carry60: 0.032
+    momentum16: 0.021
+    momentum32: 0.032
+    momentum4: 0.0
+    momentum64: 0.032
+    momentum8: 0.016
+    mrinasset1000: 0.053
+    normmom16: 0.021
+    normmom2: 0.0
+    normmom32: 0.021
+    normmom4: 0.011
+    normmom64: 0.021
+    normmom8: 0.021
+    relcarry: 0.053
+    relmomentum10: 0.0
+    relmomentum20: 0.021
+    relmomentum40: 0.032
+    relmomentum80: 0.042
+    skewabs180: 0.026
+    skewabs365: 0.026
+    skewrv180: 0.026
+    skewrv365: 0.026
 forecast_div_multiplier:
   KR3: 1.8846647325247878
   V2X: 1.6226404672702985
+  EUR_micro: 1.858974667756371
+
