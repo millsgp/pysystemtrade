@@ -400,9 +400,10 @@ risk_overlay:
   max_risk_limit_sum_abs_risk: 4.0
   max_risk_leverage: 20.0
 instrument_weights:
-  KR3: 0.33
-  V2X: 0.33
-  EUR_micro: 0.33
+  KR3: 0.25
+  V2X: 0.25
+  EUR_micro: 0.25
+  SP500_micro: 0.25
 forecast_weights:
   KR3:
     accel16: 0.0
@@ -527,17 +528,59 @@ forecast_weights:
     skewabs365: 0.026
     skewrv180: 0.026
     skewrv365: 0.026
+  SP500_micro:
+    accel16: 0.03
+    accel32: 0.03
+    accel64: 0.03
+    assettrend16: 0.02
+    assettrend2: 0.01
+    assettrend32: 0.02
+    assettrend4: 0.01
+    assettrend64: 0.02
+    assettrend8: 0.02
+    breakout10: 0.01
+    breakout160: 0.05
+    breakout20: 0.01
+    breakout320: 0.05
+    breakout40: 0.04
+    breakout80: 0.04
+    carry10: 0.025
+    carry125: 0.03
+    carry30: 0.025
+    carry60: 0.03
+    momentum16: 0.02
+    momentum32: 0.03
+    momentum4: 0.005
+    momentum64: 0.03
+    momentum8: 0.015
+    mrinasset1000: 0.05
+    normmom16: 0.02
+    normmom2: 0.01
+    normmom32: 0.02
+    normmom4: 0.01
+    normmom64: 0.02
+    normmom8: 0.02
+    relcarry: 0.05
+    relmomentum10: 0.01
+    relmomentum20: 0.02
+    relmomentum40: 0.03
+    relmomentum80: 0.04
+    skewabs180: 0.025
+    skewabs365: 0.025
+    skewrv180: 0.025
+    skewrv365: 0.025
 forecast_div_multiplier:
   KR3: 1.8846647325247878
   V2X: 1.6226404672702985
   EUR_micro: 1.858974667756371
+  SP500_micro: 1.8042775498262082
 
-#forecast_mapping:
-#  EUR_micro:
-#    a_param: 1.5588158032507866
-#    b_param: 6.1045241189408745
-#    threshold: 14.892916227772268
-#  KR3:
-#    a_param: 1.5660781779959168
-#    b_param: 6.3334722999729625
-#    threshold: 15.0545984767231
+forecast_mapping:
+  EUR_micro:
+    a_param: 1.5588158032507866
+    b_param: 6.1045241189408745
+    threshold: 14.892916227772268
+  KR3:
+    a_param: 1.5660781779959168
+    b_param: 6.3334722999729625
+    threshold: 15.0545984767231
