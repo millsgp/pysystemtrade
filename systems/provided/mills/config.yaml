@@ -400,10 +400,10 @@ risk_overlay:
   max_risk_limit_sum_abs_risk: 4.0
   max_risk_leverage: 20.0
 instrument_weights:
-  KR3: 0.25
-  V2X: 0.25
-  EUR_micro: 0.25
-  SP500_micro: 0.25
+  KR3: 0.33
+  V2X: 0.33
+  EUR_micro: 0.33
+#  SP500_micro: 0.33
 forecast_weights:
   KR3:
     accel16: 0.0
@@ -575,12 +575,12 @@ forecast_div_multiplier:
   EUR_micro: 1.858974667756371
   SP500_micro: 1.8042775498262082
 
-forecast_mapping:
-  EUR_micro:
-    a_param: 1.5588158032507866
-    b_param: 6.1045241189408745
-    threshold: 14.892916227772268
-  KR3:
-    a_param: 1.5660781779959168
-    b_param: 6.3334722999729625
-    threshold: 15.0545984767231
+#forecast_mapping:
+#  EUR_micro:
+#    a_param: 1.5588158032507866
+#    b_param: 6.1045241189408745
+#    threshold: 14.892916227772268
+#  KR3:
+#    a_param: 1.5660781779959168
+#    b_param: 6.3334722999729625
+#    threshold: 15.0545984767231
