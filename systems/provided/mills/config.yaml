@@ -388,22 +388,22 @@ forecast_scalars:
 # Capital correction
 #
 percentage_vol_target: 30.0
-notional_trading_capital: 14000
+notional_trading_capital: 20000
 base_currency: "USD"
 #
 # Portfolio creation
 #
-instrument_div_multiplier: 1.4
+instrument_div_multiplier: 1.5
 risk_overlay:
   max_risk_fraction_normal_risk: 1.75
   max_risk_fraction_stdev_risk: 4.0
   max_risk_limit_sum_abs_risk: 4.0
   max_risk_leverage: 20.0
 instrument_weights:
-  KR3: 0.33
-  V2X: 0.33
-  EUR_micro: 0.33
-#  SP500_micro: 0.33
+  KR3: 0.25
+  V2X: 0.25
+  EUR_micro: 0.25
+  SP500_micro: 0.25
 forecast_weights:
   KR3:
     accel16: 0.0
